@@ -4,6 +4,8 @@ import Languages from './Languages';
 import projectData from '../helpers/projectsData';
 
 const Modal = ({ projectId }) => {
+  if (projectId === null) return null;
+
   const {
     name, imageURL, description, languages, hostedURL, githubURL,
   } = projectData[projectId];
