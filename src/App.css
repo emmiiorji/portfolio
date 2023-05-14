@@ -288,7 +288,7 @@ nav h1 {
   /* Background added dynamically from JavaScript */
   background-size: cover;
   color: var(--white);
-  height: 386px;
+  min-height: 386px;
 }
 
 .card-with-bgimage h2 {
@@ -524,16 +524,16 @@ nav h1 {
 /* About me section ends here */
 
 /* Contact me section begins here */
-#footer {
+#contact {
   background: var(--white);
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 24px 0 8px 0;
+  padding: 24px 0 78px 0;
   font-family: 'Inter', sans-serif;
 }
 
-#footer p {
+#contact p {
   text-align: center;
   font-weight: 700;
   font-size: 32px;
@@ -542,7 +542,7 @@ nav h1 {
   margin: 0 24px 18px 24px;
 }
 
-#footer form {
+#contact form {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -550,25 +550,25 @@ nav h1 {
   color: var(--black);
 }
 
-#footer form small {
+#contact form small {
   padding: 2px 16px;
   display: block;
 }
 
-#footer .field {
+#contact .field {
   margin: 12px;
   width: 90%;
 }
 
-#footer input,
-#footer textarea {
+#contact input,
+#contact textarea {
   border: none;
   border-bottom: 1px solid #dbd8d7;
   width: 100%;
   padding: 14px 16px;
 }
 
-#footer textarea {
+#contact textarea {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -577,23 +577,22 @@ nav h1 {
   border: none;
 }
 
-#footer textarea::placeholder {
+#contact textarea::placeholder {
   color: #3c3a39;
   font-family: 'Inter', sans-serif;
 }
 
-#footer textarea + small {
+#contact textarea + small {
   margin-bottom: 10px;
 }
 
-#footer input::placeholder {
+#contact input::placeholder {
   color: #979493;
 }
 
 #footer-divide {
   border: 1px solid #dfe1e6;
   width: 100%;
-  margin-top: 124px;
 }
 
 .footer-container {
@@ -602,16 +601,18 @@ nav h1 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: var(--white);
+  padding-bottom: 8px;
 }
 
-#footer ul {
+.footer-container ul {
   display: flex;
   align-items: center;
   margin: 0 24px;
   flex-direction: row;
 }
 
-#footer .socials .icon {
+.footer-container .socials .icon {
   margin: 25px 11.5px 23px 11.5px;
   color: #505f79;
 }
@@ -623,11 +624,11 @@ nav h1 {
   background: #0d151e;
 }
 
-#footer .success {
+#contact .success {
   border: 1.5px solid #94c7b0;
 }
 
-#footer .error {
+#contact .error {
   border: 1.5px solid #e67480;
 }
 
@@ -772,7 +773,7 @@ nav h1 {
     position: relative;
     transform: scale(1);
     transition-duration: 1s;
-    height: 435px;
+    /* height: 500px; */
   }
 
   .card-with-bgimage .shown {
@@ -831,7 +832,7 @@ nav h1 {
   .project-modal .project-img {
     width: auto;
     max-width: 60%;
-    max-height: 800px;
+    max-height: 600px;
   }
 
   .project-modal .project-describe {
@@ -922,14 +923,14 @@ nav h1 {
     border-top-color: #f55800;
   }
 
-  #footer {
+  #contact {
     align-items: flex-start;
     flex-direction: row;
-    padding: 130px 0 0 0;
+    padding: 130px 0 124px 0;
     flex-wrap: wrap;
   }
 
-  #footer p {
+  #contact p {
     text-align: left;
     font-size: 40px;
     line-height: 52px;
@@ -939,7 +940,7 @@ nav h1 {
     padding: 0 24px 0 135px;
   }
 
-  #footer form {
+  #contact form {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -947,22 +948,22 @@ nav h1 {
     width: 57%;
   }
 
-  #footer input,
-  #footer textarea {
+  #contact input,
+  #contact textarea {
     width: calc(100% - 15%);
     padding: 14px 15% 14px 14px;
     margin: 0 15px 0 15px;
   }
 
-  #footer button {
+  #contact button {
     margin: 0 15px 15px 29px;
   }
 
-  #footer textarea {
+  #contact textarea {
     font-family: 'Roboto', sans-serif;
   }
 
-  #footer .socials .icon {
+  #contact .socials .icon {
     margin: 15px 10px 15px 10px;
   }
 
