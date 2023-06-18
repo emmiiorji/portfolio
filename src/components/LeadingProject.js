@@ -2,7 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Languages from './Languages';
 
-const LeadingProject = () => {};
+const LeadingProject = ({ project, projectId, handlePeek }) => (
+  <div className="card">
+    <img src={project.imageURL} className="card-img" alt={project.name} />
+    <div id="leading-card">
+      <h2>Header</h2>
+      <p>{project.description}</p>
+      <Languages languages={project.languages} />
+      <button type="button" className="see-leading-project" id={`project_${projectId}`} onClick={() => handlePeek(projectId)}>
+        Have a Peek
+      </button>
+    </div>
+  </div>
+);
 
 LeadingProject.propTypes = {
   project: PropTypes.shape({
