@@ -6,7 +6,7 @@ const LeadingProject = ({ project, projectId, handlePeek }) => (
   <div className="card">
     <img src={project.imageURL} className="card-img" alt={project.name} />
     <div id="leading-card">
-      <h2>Header</h2>
+      <h2>{project.name}</h2>
       <p>{project.description}</p>
       <Languages languages={project.languages} />
       <button type="button" className="see-leading-project" id={`project_${projectId}`} onClick={() => handlePeek(projectId)}>
