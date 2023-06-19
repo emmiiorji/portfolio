@@ -12,6 +12,8 @@ Project.propTypes = {
     imgMobile: PropTypes.string,
     imageURL: PropTypes.string,
   }).isRequired,
+  projectId: PropTypes.number.isRequired,
+  handlePeek: PropTypes.func.isRequired,
 };
 
 export default Project;
