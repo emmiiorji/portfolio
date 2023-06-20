@@ -6,7 +6,7 @@ const Project = ({ project, projectId, handlePeek }) => {(
   <div className="card card-with-bgimage active" style={{ background: `url("${project.imgMobile || project.imageURL}") no-repeat center` }}>
     <div className="overlay">
       <div className="shown">
-        <h2>Header</h2>
+        <h2>{project.name}</h2>
         <p>
           {project.description}
         </p>
