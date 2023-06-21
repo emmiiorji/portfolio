@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Languages from './Languages';
 
-const Project = ({ project, projectId, handlePeek }) => {(
+const Project = ({ project, projectId, handlePeek }) => (
   <div className="card card-with-bgimage active" style={{ background: `url("${project.imgMobile || project.imageURL}") no-repeat center` }}>
     <div className="overlay">
       <div className="shown">
@@ -17,7 +17,7 @@ const Project = ({ project, projectId, handlePeek }) => {(
       </button>
     </div>
   </div>
-)};
+);
 
 Project.propTypes = {
   project: PropTypes.shape({
