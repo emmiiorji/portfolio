@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 import Languages from './Languages';
 import projects from '../helpers/projectsData';
 
-const Modal = ({ projectId, closeModal }) => {
+const Modal = ({ projectId, show, closeModal }) => {
   const {
     name, imageURL, description, languages, hostedURL, githubURL,
   } = projects[projectId];
 
   return (
-    <div className="project-modal">
+    <div className="project-modal" style={{ display: `${show ? 'block' : 'none'}` }}>
       {/* eslint-disable-next-line max-len */}
       {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions, jsx-a11y/click-events-have-key-events */}
       <div className="project-margin" onClick={() => closeModal()}>
@@ -51,6 +51,7 @@ const Modal = ({ projectId, closeModal }) => {
 Modal.propTypes = {
   projectId: PropTypes.number.isRequired,
   closeModal: PropTypes.func.isRequired,
+  show: PropTypes.bool.isRequired,
 };
 
 export default Modal;
