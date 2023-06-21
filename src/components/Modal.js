@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Languages from './Languages';
 import projects from '../helpers/projectsData';
 
-const Modal = ({ projectId }) => {
+const Modal = ({ projectId, closeModal }) => {
   const {
     name, imageURL, description, languages, hostedURL, githubURL,
   } = projects[projectId];
@@ -13,11 +13,11 @@ const Modal = ({ projectId }) => {
     <div className="project-modal">
       {/* eslint-disable-next-line max-len */}
       {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions, jsx-a11y/click-events-have-key-events */}
-      <div className="project-margin">
+      <div className="project-margin" onClick={() => closeModal()}>
         <div className="project-modal-container">
           <div className="modal-header">
             <h2>{name}</h2>
-            <AiOutlineClose className="close" />
+            <AiOutlineClose className="close" onClick={() => closeModal()} />
           </div>
           <Languages languages={languages} />
           <div className="project-modal-body">
@@ -50,6 +50,7 @@ const Modal = ({ projectId }) => {
 
 Modal.propTypes = {
   projectId: PropTypes.number.isRequired,
+  closeModal: PropTypes.func.isRequired,
 };
 
 export default Modal;
