@@ -1,41 +1,45 @@
 import React from 'react';
+import { AiOutlineClose } from 'react-icons/ai';
 import PropTypes from 'prop-types';
 import Languages from './Languages';
-import projectData from '../helpers/projectsData';
+import projects from '../helpers/projectsData';
 
 const Modal = ({ projectId }) => {
-  if (projectId === null) return null;
-
   const {
     name, imageURL, description, languages, hostedURL, githubURL,
-  } = projectData[projectId];
+  } = projects[projectId];
+
   return (
-    <div className="project-margin">
-      <div className="project-modal-container">
-        <div className="modal-header">
-          <h2>{name}</h2>
-          <img src="./assets/img/close-icon.png" className="close" alt="Close Modal" />
-        </div>
-        <Languages languages={languages} />
-        <div className="project-modal-body">
-          <img src={imageURL} className="project-img" alt="Project" />
-          <div className="project-describe">
-            <p className="description">
-              {description}
-            </p>
-            <div className="points-of-action">
-              <a href={hostedURL || '#'} rel="noreferrer" target="_blank">
-                <button type="button">
-                  See Live
-                  <i className="fa-solid fa-power-off" />
-                </button>
-              </a>
-              <a href={githubURL || '#'} rel="noreferrer" target="_blank">
-                <button type="button">
-                  See Source
-                  <i className="fa-brands fa-github" />
-                </button>
-              </a>
+    <div className="project-modal">
+      {/* eslint-disable-next-line max-len */}
+      {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions, jsx-a11y/click-events-have-key-events */}
+      <div className="project-margin">
+        <div className="project-modal-container">
+          <div className="modal-header">
+            <h2>{name}</h2>
+            <AiOutlineClose className="close" />
+          </div>
+          <Languages languages={languages} />
+          <div className="project-modal-body">
+            <img src={imageURL} className="project-img" alt="Project" />
+            <div className="project-describe">
+              <p className="description">
+                {description}
+              </p>
+              <div className="points-of-action">
+                <a href={hostedURL || '#'} rel="noreferrer" target="_blank">
+                  <button type="button">
+                    See Live
+                    <i className="fa-solid fa-power-off" />
+                  </button>
+                </a>
+                <a href={githubURL || '#'} rel="noreferrer" target="_blank">
+                  <button type="button">
+                    See Source
+                    <i className="fa-brands fa-github" />
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
