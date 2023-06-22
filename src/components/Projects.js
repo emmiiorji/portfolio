@@ -7,6 +7,7 @@ import LeadingProject from './LeadingProject';
 
 const Projects = () => {
   const [modalProjectId, setModalProjectId] = useState(null);
+  const [showModal, setShowModal] = useState(false);
 
   return <></>;
 };
