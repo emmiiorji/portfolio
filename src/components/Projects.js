@@ -9,6 +9,11 @@ const Projects = () => {
   const [modalProjectId, setModalProjectId] = useState(null);
   const [showModal, setShowModal] = useState(false);
 
+  const handlePeek = (projectId) => {
+    setModalProjectId(projectId);
+    setShowModal(true);
+  };
+
   return <></>;
 };
 
