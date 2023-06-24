@@ -16,7 +16,47 @@ const Projects = () => {
 
   const closeModal = () => setShowModal(false);
 
-  return <></>;
+  return (
+    <section className="works-section" id="works">
+      <div id="works-header">
+        <h2>Latest Masterpieces</h2>
+        <hr />
+      </div>
+      <div className="cards-container">
+        {projects.map((project, index) => {
+          if (index === projects.length - 1) {
+            return (
+              <LeadingProject
+                project={project}
+                projectId={index}
+                handlePeek={handlePeek}
+                key={nanoid()}
+              />
+            );
+          }
+          return (
+            <Project
+              project={project}
+              projectId={index}
+              handlePeek={handlePeek}
+              key={nanoid()}
+            />
+          );
+        }).reverse()}
+        (
+        {modalProjectId !== null
+          ? (
+            <Modal
+              projectId={modalProjectId}
+              show={showModal}
+              closeModal={closeModal}
+            />
+          )
+          : <></>}
+        )
+      </div>
+    </section>
+  );
 };
 
 export default Projects;
