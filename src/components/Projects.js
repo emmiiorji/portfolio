@@ -14,6 +14,8 @@ const Projects = () => {
     setShowModal(true);
   };
 
+  const closeModal = () => setShowModal(false);
+
   return <></>;
 };
 
