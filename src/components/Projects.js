@@ -6,15 +6,13 @@ import Modal from './Modal';
 import LeadingProject from './LeadingProject';
 
 const Projects = () => {
-  const [modalProjectId, setModalProjectId] = useState(null);
-  const [showModal, setShowModal] = useState(false);
+  const [modalProjectId, setModalProjectId] = useState(-1);
 
   const handlePeek = (projectId) => {
     setModalProjectId(projectId);
-    setShowModal(true);
   };
 
-  const closeModal = () => setShowModal(false);
+  const closeModal = () => setModalProjectId(-1);
 
   return (
     <section className="works-section" id="works">
@@ -44,15 +42,11 @@ const Projects = () => {
           );
         }).reverse()}
         (
-        {modalProjectId !== null
-          ? (
-            <Modal
-              projectId={modalProjectId}
-              show={showModal}
-              closeModal={closeModal}
-            />
-          )
-          : <></>}
+        <Modal
+          projectId={modalProjectId}
+          show={modalProjectId !== -1}
+          closeModal={closeModal}
+        />
         )
       </div>
     </section>
