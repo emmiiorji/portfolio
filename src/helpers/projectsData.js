@@ -60,12 +60,12 @@ const data = () => [
   },
   {
     name: 'Private Investigators',
-    description: 'A Single Page App (SPA) developed with React that allows users to make simple calculations and read a random math-related quote.',
-    imageURL: 'https://res.cloudinary.com/emmii/image/upload/v1666193436/my_portfolio/Math-Magician-Desktop_p0qbuw.jpg',
-    imgMobile: 'https://res.cloudinary.com/emmii/image/upload/v1666193436/my_portfolio/Math-Magician-Mobile_lyfdhe.jpg',
-    languages: ['HTML', 'CSS', 'React'],
-    hostedURL: 'https://world-math-magicians.netlify.app/',
-    githubURL: 'https://github.com/emmiiorji/math-magicians-app',
+    description: 'This is an online learning platform for users interested in learning FOREX trading, This website is built with comprehensive courses from the basics of forex market to advanced trading strategies.',
+    imageURL: 'https://res.cloudinary.com/emmii/image/upload/v1686919370/my_portfolio/Screenshot_2023-06-16_133935_x679md.png',
+    imgMobile: 'https://res.cloudinary.com/emmii/image/upload/v1686919503/my_portfolio/Screenshot_2023-06-16_134450_h518ei.png',
+    languages: ['React', 'Node.js', 'Express', 'MySQL'],
+    hostedURL: 'https://pipsgod.netlify.app/',
+    githubURL: 'https://github.com/emmiiorji/pips-god-api',
   },
 ];
 
