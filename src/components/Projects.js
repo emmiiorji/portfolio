@@ -41,13 +41,15 @@ const Projects = () => {
             />
           );
         }).reverse()}
-        (
-        <Modal
-          projectId={modalProjectId}
-          show={modalProjectId !== -1}
-          closeModal={closeModal}
-        />
-        )
+        {modalProjectId !== -1
+          ? (
+            <Modal
+              projectId={modalProjectId}
+              show={modalProjectId !== -1}
+              closeModal={closeModal}
+            />
+          )
+          : <></>}
       </div>
     </section>
   );
