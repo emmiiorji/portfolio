@@ -357,6 +357,11 @@ nav h1 {
   font-size: 35px;
 }
 
+.project-modal .close:active {
+  background: #67798e;
+  color: white;
+}
+
 .project-modal .project-img {
   width: 100%;
 }
