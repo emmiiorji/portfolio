@@ -3,7 +3,14 @@ import PropTypes from 'prop-types';
 import Languages from './Languages';
 
 const Project = ({ project, projectId, handlePeek }) => (
-  <div className="card card-with-bgimage active" style={{ background: `url("${project.imgMobile || project.imageURL}") no-repeat center` }}>
+  <div className="card card-with-bgimage active" style={{ position: 'relative' }}>
+    <div
+      style={{
+        width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'absolute', overflow: 'hidden',
+      }}
+    >
+      <img src={project.imageURL} className="card-img" alt={project.name} style={{ width: '100%' }} />
+    </div>
     <div className="overlay">
       <div className="shown">
         <h2>{project.name}</h2>
