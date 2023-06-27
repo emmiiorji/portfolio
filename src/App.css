@@ -359,6 +359,7 @@ nav h1 {
 .project-modal .close:active {
   background: #67798e;
   color: white;
+  border-radius: 50%;
 }
 
 .project-modal .project-img {
