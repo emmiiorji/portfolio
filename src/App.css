@@ -752,6 +752,7 @@ nav h1 {
     position: relative;
     transform: scale(1);
     transition-duration: 1s;
+    height: 435px;
   }
 
   .card-with-bgimage .shown {
