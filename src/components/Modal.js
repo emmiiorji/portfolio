@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import PropTypes from 'prop-types';
 import Languages from './Languages';
@@ -8,6 +8,21 @@ const Modal = ({ projectId, show, closeModal }) => {
   const {
     name, imageURL, description, languages, hostedURL, githubURL,
   } = projects[projectId];
+
+  const containerRef = useRef();
+
+  useEffect(() => {
+    const handleClickOutsideModal = (event) => {
+      if (containerRef.current && containerRef.current.contains(event.target)) {
+        closeModal();
+      }
+    };
+    document.addEventListener('click', handleClickOutsideModal);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutsideModal);
+    };
+  });
 
   return (
     <div className="project-modal" style={{ display: `${show ? 'block' : 'none'}` }}>
