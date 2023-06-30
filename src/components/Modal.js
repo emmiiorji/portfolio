@@ -25,7 +25,7 @@ const Modal = ({ projectId, show, closeModal }) => {
   });
 
   return (
-    <div className="project-modal" style={{ display: `${show ? 'block' : 'none'}` }}>
+    <div className="project-modal" style={{ display: `${show ? 'block' : 'none'}` }} ref={containerRef}>
       {/* eslint-disable-next-line max-len */}
       {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions, jsx-a11y/click-events-have-key-events */}
       <div className="project-margin">
