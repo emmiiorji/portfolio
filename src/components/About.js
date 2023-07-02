@@ -9,7 +9,7 @@ const About = () => (
       you have a coding project in need of a skilled hand, I eagerly await your contact.
       Together, let&#39;s bring your ideas to life!
     </p>
-    <button type="button" id="get-resume"><a href="#contact-me">Reach Out</a></button>
+    <a href="#contact-me" className="button">Reach Out</a>
     <hr />
     <div className="skill-list">
       <div className="languages">
