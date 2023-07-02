@@ -35,7 +35,8 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-button {
+button,
+.button {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -51,7 +52,8 @@ button {
   justify-content: center;
 }
 
-button:hover {
+button:hover,
+.button:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
@@ -59,7 +61,8 @@ button:hover {
   transition-timing-function: ease-out;
 }
 
-button:active {
+button:active,
+.button:active {
   /* Pressed/Clicked */
   background: #e05304;
   color: var(--white);
@@ -360,10 +363,15 @@ nav h1 {
   font-size: 35px;
 }
 
-.project-modal .close:active {
-  background: #67798e;
+
+.project-modal .close:hover {
+  background: #c0c7d1;
   color: white;
   border-radius: 50%;
+}
+
+.project-modal .close:active {
+  background: #67798e;
 }
 
 .project-modal .project-img {
@@ -441,7 +449,7 @@ nav h1 {
   text-align: center;
 }
 
-#about-me button {
+#about-me .button {
   align-self: flex-start;
   margin: 24px 0;
 }
