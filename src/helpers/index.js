@@ -12,7 +12,15 @@ const scrollToTop = () => {
   });
 };
 
+const scrollToBottom = () => {
+  window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: 'smooth',
+  });
+};
+
 export {
   scrollToSection,
   scrollToTop,
+  scrollToBottom,
 };
