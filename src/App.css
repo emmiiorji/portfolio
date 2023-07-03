@@ -46,6 +46,7 @@ button,
   border: none;
   cursor: pointer;
   background: #f55800;
+  border: 1px solid #f55800;
   color: var(--white);
   display: flex;
   align-items: center;
@@ -365,13 +366,15 @@ nav h1 {
 
 
 .project-modal .close:hover {
-  background: #c0c7d1;
+  background: #dfe3e8;
   color: white;
   border-radius: 50%;
 }
 
 .project-modal .close:active {
   background: #67798e;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
 }
 
 .project-modal .project-img {
