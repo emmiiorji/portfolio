@@ -829,7 +829,9 @@ nav h1 {
   }
 
   .project-modal .project-img {
-    width: 60%;
+    width: auto;
+    max-width: 60%;
+    max-height: 800px;
   }
 
   .project-modal .project-describe {
