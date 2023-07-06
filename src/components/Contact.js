@@ -3,7 +3,13 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 
 const Contact = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
+  const { register, handleSubmit, formState: { errors } } = useForm({
+    defaultValues: {
+      fullName: '',
+      email: '',
+      message: '',
+    },
+  });
 
   const validFullName = /^[a-z][a-z0-9\s-]+$/gi;
   const validEmail = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
