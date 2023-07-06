@@ -632,6 +632,10 @@ nav h1 {
   border: 1.5px solid #e67480;
 }
 
+#contact .show-error {
+  color: red;
+}
+
 /* Contact me section ends here */
 
 /* Media Queries Begin here */
