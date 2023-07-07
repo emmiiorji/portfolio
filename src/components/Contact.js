@@ -1,4 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
+import axios from 'axios';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
@@ -11,6 +12,13 @@ const Contact = () => {
     },
   });
 
+  const handleFormSubmit = async (data) => {
+    const response = await axios.post('https://formspree.io/f/xjvleokg', data);
+    if (response.status === 200) {
+      // Handle success
+    }
+    // Handle error
+  };
   const validFullName = /^[a-z][a-z0-9\s-]+$/gi;
   const validEmail = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
   return (
