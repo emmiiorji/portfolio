@@ -11,16 +11,11 @@ const Header = () => {
     <header>
       <nav className={`toolbar ${menuOpen ? 'show-mobile-menu' : ''}`}>
         <a href="/" id="author-name">Emmanuel Orji</a>
-        <div
-          id="mobile-menu"
-          tabIndex={0}
-          role="button"
-          onKeyDown={toggleMenu}
-        >
+        <div id="mobile-menu">
           <GiHamburgerMenu
             id="hamburger"
             style={{ display: `${menuOpen ? 'none' : 'inline'}` }}
-            onClick={(event) => { if (event.key === 'Enter') toggleMenu(); }}
+            onClick={toggleMenu}
           />
           <AiOutlineClose
             className="close"
@@ -32,7 +27,7 @@ const Header = () => {
           <li><a href="#my-works" onClick={toggleMenu}>Portfolio</a></li>
           <li><a href="#about-me" onClick={toggleMenu}>About</a></li>
           <li><a href="#contact-me" onClick={toggleMenu}>Contact</a></li>
-          <li><BsFillEnvelopeFill /></li>
+          <li><BsFillEnvelopeFill className="fa-envelope" /></li>
         </ul>
       </nav>
     </header>
