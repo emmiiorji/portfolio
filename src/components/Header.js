@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { BsFillEnvelopeFill } from 'react-icons/bs';
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState('');
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <header>
