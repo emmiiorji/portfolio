@@ -192,6 +192,10 @@ nav h1 {
   width: 330px;
 }
 
+.socials {
+  display: flex;
+}
+
 .socials .icon {
   margin-right: 15px;
   color: var(--light_gray);
@@ -699,7 +703,6 @@ nav h1 {
   }
 
   .socials {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
