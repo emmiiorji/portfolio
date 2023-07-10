@@ -5,6 +5,7 @@ import { BsFillEnvelopeFill } from 'react-icons/bs';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
     <header>
