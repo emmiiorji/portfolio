@@ -14,7 +14,7 @@ const Header = () => {
         <div id="mobile-menu">
           <GiHamburgerMenu
             id="hamburger"
-            style={{ display: `${menuOpen || window.innerWidth > 768 ? 'none' : 'inline'}` }}
+            style={{ display: `${menuOpen || (window.innerWidth > 768) ? 'none' : 'inline'}` }}
             onClick={toggleMenu}
           />
           <AiOutlineClose
