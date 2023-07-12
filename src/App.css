@@ -1028,21 +1028,21 @@ nav h1 {
 
 @keyframes slideIn {
   0% {
-    transform: translateX(100%);
+    transform: translateY(-100vh);
   }
-
+  
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes slideOut {
   0% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
-
+  
   100% {
-    transform: translateX(100%);
+    transform: translateY(-100vh);
   }
 }
 

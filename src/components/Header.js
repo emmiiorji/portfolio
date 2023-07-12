@@ -5,23 +5,26 @@ import { BsFillEnvelopeFill } from 'react-icons/bs';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   useEffect(() => {
     window.addEventListener('resize', () => {
-      setWindowWidth(window.innerWidth);
+      setIsMobile(window.innerWidth < 768);
     });
   }, []);
 
   return (
     <header>
-      <nav className={`toolbar ${menuOpen ? 'show-mobile-menu' : ''}`} style={{ animation: `${menuOpen ? 'slideIn 1s ease-in-out' : ''}` }}>
+      <nav
+        className={`toolbar ${menuOpen ? 'show-mobile-menu' : ''}`}
+        style={{ animation: `${menuOpen ? 'slideIn 1s ease-in-out' : ''}` }}
+      >
         <a href="/" id="author-name">Emmanuel Orji</a>
         <div id="mobile-menu">
           <GiHamburgerMenu
             id="hamburger"
-            style={{ display: `${!menuOpen && (windowWidth < 768) ? 'inline' : 'none'}` }}
+            style={{ display: `${!menuOpen && isMobile ? 'inline' : 'none'}` }}
             onClick={toggleMenu}
           />
           <AiOutlineClose
