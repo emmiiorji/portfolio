@@ -92,7 +92,7 @@ input:focus {
 }
 
 .toolbar .close {
-  display: none;
+  /* display: none; */
   font-size: larger;
   color: #67798e;
   margin-top: 20px;
@@ -114,6 +114,7 @@ input:focus {
   flex-direction: column;
   justify-content: flex-start;
   z-index: 1;
+  transition: width 1s ease-in-out;
 }
 
 .show-mobile-menu #mobile-menu {
@@ -657,9 +658,9 @@ nav h1 {
     display: inline;
   }
 
-  .toolbar #hamburger {
+  /* .toolbar #hamburger {
     display: none;
-  }
+  } */
 
   .toolbar #author-name {
     margin-left: calc(9vw - 24px);
