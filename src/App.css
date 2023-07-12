@@ -92,7 +92,6 @@ input:focus {
 }
 
 .toolbar .close {
-  /* display: none; */
   font-size: larger;
   color: #67798e;
   margin-top: 20px;
@@ -114,7 +113,6 @@ input:focus {
   flex-direction: column;
   justify-content: flex-start;
   z-index: 1;
-  transition: width 1s ease-in-out;
 }
 
 .show-mobile-menu #mobile-menu {
@@ -658,10 +656,6 @@ nav h1 {
     display: inline;
   }
 
-  /* .toolbar #hamburger {
-    display: none;
-  } */
-
   .toolbar #author-name {
     margin-left: calc(9vw - 24px);
   }
@@ -1029,6 +1023,26 @@ nav h1 {
 
   to {
     opacity: 0;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
   }
 }
 

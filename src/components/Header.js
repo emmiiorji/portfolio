@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <header>
-      <nav className={`toolbar ${menuOpen ? 'show-mobile-menu' : ''}`}>
+      <nav className={`toolbar ${menuOpen ? 'show-mobile-menu' : ''}`} style={{ animation: `${menuOpen ? 'slideIn 1s ease-in-out' : ''}` }}>
         <a href="/" id="author-name">Emmanuel Orji</a>
         <div id="mobile-menu">
           <GiHamburgerMenu
