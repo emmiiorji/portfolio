@@ -1,11 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { BsFillEnvelopeFill } from 'react-icons/bs';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const toggleMenu = () => setMenuOpen(!menuOpen);
+
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      setWindowWidth(window.innerWidth);
+    });
+  }, []);
 
   return (
     <header>
@@ -14,7 +21,7 @@ const Header = () => {
         <div id="mobile-menu">
           <GiHamburgerMenu
             id="hamburger"
-            style={{ display: `${menuOpen || (window.innerWidth > 768) ? 'none' : 'inline'}` }}
+            style={{ display: `${!menuOpen && (windowWidth < 768) ? 'inline' : 'none'}` }}
             onClick={toggleMenu}
           />
           <AiOutlineClose
