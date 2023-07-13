@@ -11,6 +11,8 @@ module.exports = {
         customOffWhite: '#fff5e1',
         customGrey: '#3c3a39',
         customLightGray: '#dbd8d7',
+        customMilk: '#FFF5E1',
+        customLighterGray: '#6F6C6B',
       },
     },
   },
