@@ -14,6 +14,10 @@ module.exports = {
         customMilk: '#FFF5E1',
         customLighterGray: '#6F6C6B',
       },
+      fontFamily: {
+        roboto: ['Roboto'],
+        poppins: ['Poppins', 'sans-serif'],
+      },
     },
   },
   plugins: [],
