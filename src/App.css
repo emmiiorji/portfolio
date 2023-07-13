@@ -36,7 +36,8 @@ body {
 }
 
 button,
-.button {
+.button,
+[type='button'] {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
