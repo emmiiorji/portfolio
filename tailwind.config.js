@@ -18,6 +18,28 @@ module.exports = {
         roboto: ['Roboto'],
         poppins: ['Poppins', 'sans-serif'],
       },
+      animation: {
+        slideIn: 'slideIn 1s ease-in-out',
+        slideOut: 'slideOut 1s ease-in-out',
+      },
+      keyframes: {
+        slideIn: {
+          '0%': {
+            transform: 'translateY(calc(-100vh + 48px))',
+          },
+          '100%': {
+            transform: 'translateY(0)',
+          },
+        },
+        slideOut: {
+          '0%': {
+            transform: 'translateY(0)',
+          },
+          '100%': {
+            transform: 'translateY(calc(-100vh + 48px))',
+          },
+        },
+      },
     },
   },
   plugins: [],
