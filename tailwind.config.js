@@ -25,7 +25,7 @@ module.exports = {
       keyframes: {
         slideIn: {
           '0%': {
-            transform: 'translateY(calc(-100vh + 48px))',
+            transform: 'translateY(calc(-100vh + 50px))',
           },
           '100%': {
             transform: 'translateY(0)',
@@ -36,7 +36,7 @@ module.exports = {
             transform: 'translateY(0)',
           },
           '100%': {
-            transform: 'translateY(calc(-100vh + 48px))',
+            transform: 'translateY(calc(-100vh + 50px))',
           },
         },
       },
