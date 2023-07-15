@@ -6,7 +6,7 @@ import { BsFillEnvelopeFill } from 'react-icons/bs';
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const toggleMenu = () => { if (isMobile) setMenuOpen(!menuOpen); };
 
   useEffect(() => {
     window.addEventListener('resize', () => {
