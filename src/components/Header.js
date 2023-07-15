@@ -11,11 +11,10 @@ const Header = () => {
     if (menuClosing) {
       setMenuClosing(true);
       setTimeout(() => {
-        setMenuOpen(!menuOpen);
         setMenuClosing(false);
+        setMenuOpen(false);
       }, 800); // Waiting for closing menu animation to finish
-    }
-    if (isMobile) setMenuOpen(!menuOpen);
+    } else if (isMobile) setMenuOpen(!menuOpen);
   };
 
   useEffect(() => {
@@ -27,7 +26,7 @@ const Header = () => {
   return (
     <header className="font-roboto">
       <nav
-        className={`flex ${`${menuClosing ? 'animate-slideOut' : ''}`} ${menuOpen ? 'animate-slideIn flex-col bg-customGrey h-screen w-screen absolute ' : 'justify-between'} px-3 bg-customGrey text-white toolbar md:items-center md:px-[10.416%]`}
+        className={`flex ${`${menuClosing ? 'animate-slideOut' : ''}`} ${menuOpen ? 'animate-slideIn flex-col h-screen w-screen absolute' : 'justify-between'} px-3 bg-customGrey text-white toolbar md:items-center md:px-[10.416%]`}
       >
         <a className={`self-center ${menuOpen ? 'hidden' : ''}`} href="/" id="author-name">Emmanuel Orji</a>
         <div className={`p-4 mr-3 flex items-center ${menuOpen ? 'self-end ' : ''}`} id="mobile-menu">
