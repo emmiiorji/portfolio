@@ -37,7 +37,8 @@ body {
 
 button,
 .button,
-[type='button'] {
+[type='button'],
+[type='submit'] {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
