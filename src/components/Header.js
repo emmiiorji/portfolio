@@ -14,9 +14,8 @@ const Header = () => {
         setMenuOpen(!menuOpen);
         setMenuClosing(false);
       }, 800); // Waiting for closing menu animation to finish
-    } else {
-      setMenuOpen(!menuOpen);
     }
+    if (isMobile) setMenuOpen(!menuOpen);
   };
 
   useEffect(() => {
@@ -28,10 +27,10 @@ const Header = () => {
   return (
     <header className="font-roboto">
       <nav
-        className={`flex ${menuOpen ? 'animate-slideIn flex-col bg-customGrey h-screen w-screen absolute ' : 'justify-between'} ${`${menuClosing ? 'animate-slideOut' : ''}`} py-2.5 px-3 bg-customGrey h-12 text-white toolbar`}
+        className={`flex ${`${menuClosing ? 'animate-slideOut' : ''}`} ${menuOpen ? 'animate-slideIn flex-col bg-customGrey h-screen w-screen absolute ' : 'justify-between'} px-3 bg-customGrey text-white toolbar md:items-center md:px-[10.416%]`}
       >
-        <a className={`${menuOpen ? 'hidden' : ''}`} href="/" id="author-name">Emmanuel Orji</a>
-        <div className={`mr-3 flex items-center ${menuOpen ? 'self-end ' : ''}`} id="mobile-menu">
+        <a className={`self-center ${menuOpen ? 'hidden' : ''}`} href="/" id="author-name">Emmanuel Orji</a>
+        <div className={`p-4 mr-3 flex items-center ${menuOpen ? 'self-end ' : ''}`} id="mobile-menu">
           <GiHamburgerMenu
             id="hamburger"
             className={`${!menuOpen && isMobile ? '' : 'hidden'}`}
@@ -43,19 +42,19 @@ const Header = () => {
           />
         </div>
         <ul
-          className={`px-3 py-2.5 flex gap-4 ${menuOpen ? 'text-customMilk text-3xl/[44px] font-bold flex-col' : `${isMobile ? 'hidden' : 'font-semibold items-center'}`}`}
+          className={`p-2 flex ${menuOpen ? 'text-customMilk text-3xl/[44px] font-bold flex-col' : `${isMobile ? 'hidden' : 'font-semibold items-center'}`}`}
           id="nav-menu"
         >
-          <li className={`${menuOpen ? 'border-b border-customLighterGray' : ''}`}>
-            <a href="#my-works" className={`${menuOpen ? 'p-4' : ''}`} onClick={(event) => toggleMenu(event, true)}>Portfolio</a>
+          <li className={`${menuOpen ? 'border-b border-customLighterGray' : ''} hover:bg-customOrange hover:rounded p-2`}>
+            <a href="#my-works" onClick={(event) => toggleMenu(event, menuOpen)}>Portfolio</a>
           </li>
-          <li className={`${menuOpen ? 'border-b border-customLighterGray' : ''}`}>
-            <a href="#about-me" className={`${menuOpen ? 'p-4' : ''}`} onClick={(event) => toggleMenu(event, true)}>About</a>
+          <li className={`${menuOpen ? 'border-b border-customLighterGray' : ''} hover:bg-customOrange hover:rounded p-2`}>
+            <a href="#about-me" onClick={(event) => toggleMenu(event, menuOpen)}>About</a>
           </li>
-          <li className={`${menuOpen ? 'border-b border-customLighterGray' : ''}`}>
-            <a href="#contact-me" className={`${menuOpen ? 'p-4' : ''}`} onClick={(event) => toggleMenu(event, true)}>Contact</a>
+          <li className={`${menuOpen ? 'border-b border-customLighterGray' : ''} hover:bg-customOrange hover:rounded p-2`}>
+            <a href="#contact-me" onClick={(event) => toggleMenu(event, menuOpen)}>Contact</a>
           </li>
-          <li><BsFillEnvelopeFill className={`${menuOpen ? 'hidden' : ''}`} /></li>
+          <li className={`${menuOpen ? 'hidden' : ''} hover:bg-customOrange hover:rounded p-2.5`}><BsFillEnvelopeFill /></li>
         </ul>
       </nav>
     </header>
