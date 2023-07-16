@@ -15,8 +15,9 @@ module.exports = {
         customLighterGray: '#6F6C6B',
       },
       fontFamily: {
-        roboto: ['Roboto'],
+        roboto: ['Roboto', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
+        creteRound: ['"Crete Round"', 'serif'],
       },
       animation: {
         slideIn: 'slideIn 1s ease-in-out',
