@@ -22,6 +22,8 @@ module.exports = {
       animation: {
         slideIn: 'slideIn 1s ease-in-out',
         slideOut: 'slideOut 1s ease-in-out',
+        typing: 'typing 10s steps(100, end) forwards, blinking 1s infinite',
+        typeAndClean: 'typeAndClean 10s steps(75, end) infinite, blinking 1s infinite',
       },
       keyframes: {
         slideIn: {
@@ -38,6 +40,36 @@ module.exports = {
           },
           '100%': {
             transform: 'translateY(calc(-100vh + 50px))',
+          },
+        },
+        typing: {
+          from: {
+            width: '0',
+          },
+          to: {
+            width: '100%',
+          },
+        },
+        typeAndClean: {
+          '0%': {
+            width: '0',
+          },
+          '80%': {
+            width: '100%',
+          },
+          '100%': {
+            width: '0%',
+          },
+        },
+        blinking: {
+          '0%': {
+            'border-color': 'transparent',
+          },
+          '50%': {
+            'border-color': '#ff6b00',
+          },
+          '100%': {
+            'border-color': 'transparent',
           },
         },
       },
