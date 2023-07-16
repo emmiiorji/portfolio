@@ -26,10 +26,10 @@ const Header = () => {
   return (
     <header className="font-roboto">
       <nav
-        className={`flex ${`${menuClosing ? 'animate-slideOut' : ''}`} ${menuOpen ? 'animate-slideIn flex-col h-screen w-screen absolute' : 'justify-between'} px-3 bg-customGrey text-white toolbar md:items-center md:px-[10.416%]`}
+        className={`flex ${`${menuClosing ? 'animate-slideOut' : ''}`} ${menuOpen ? 'animate-slideIn flex-col h-screen w-screen absolute' : 'justify-between px-3'} bg-customGrey text-white toolbar md:items-center md:px-[10.416%]`}
       >
         <a className={`self-center ${menuOpen ? 'hidden' : ''}`} href="/" id="author-name">Emmanuel Orji</a>
-        <div className={`p-4 mr-3 flex items-center ${menuOpen ? 'self-end ' : ''}`} id="mobile-menu">
+        <div className={`p-4 flex items-center ${menuOpen ? 'self-end ' : ''}`} id="mobile-menu">
           <GiHamburgerMenu
             id="hamburger"
             className={`${!menuOpen && isMobile ? '' : 'hidden'}`}
@@ -41,7 +41,7 @@ const Header = () => {
           />
         </div>
         <ul
-          className={`p-2 flex ${menuOpen ? 'text-customMilk text-3xl/[44px] font-bold flex-col' : `${isMobile ? 'hidden' : 'font-semibold items-center'}`}`}
+          className={`flex ${menuOpen ? 'text-customMilk text-3xl/[44px] font-bold flex-col px-6' : `${isMobile ? 'hidden' : 'font-semibold items-center p-2'}`}`}
           id="nav-menu"
         >
           <li className={`${menuOpen ? 'border-b border-customLighterGray' : ''} hover:bg-customOrange hover:rounded p-2`}>
