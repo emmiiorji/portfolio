@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react';
 
 const useWindowWidth = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [isMobile, setIsMobile] = useState(windowWidth < 768);
 
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
+      setIsMobile(window.innerWidth < 768);
     };
 
     // Add event listener to window resize
@@ -17,7 +19,7 @@ const useWindowWidth = () => {
     };
   }, []);
 
-  return { windowWidth };
+  return { windowWidth, isMobile };
 };
 
 export default useWindowWidth;
