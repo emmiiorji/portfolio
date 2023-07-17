@@ -4,6 +4,14 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
+    backgroundSize: {
+      '25%': '25%',
+      '35%': '35%',
+    },
+    backgroundImage: {
+      headerBgMobile: 'url(./assets/img/header_mobile.png)',
+      headerBgDesktop: 'url(./assets/img/Illustration-header.png)',
+    },
     extend: {
       colors: {
         customBlack: '#1c1a19',
@@ -13,6 +21,7 @@ module.exports = {
         customLightGray: '#dbd8d7',
         customMilk: '#FFF5E1',
         customLighterGray: '#6F6C6B',
+        customRed: '#f41314',
       },
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
@@ -23,7 +32,7 @@ module.exports = {
         slideIn: 'slideIn 1s ease-in-out',
         slideOut: 'slideOut 1s ease-in-out',
         typing: 'typing 10s steps(100, end) forwards, blinking 1s infinite',
-        typeAndClean: 'typeAndClean 10s steps(75, end) infinite, blinking 1s infinite',
+        typeAndClean: 'typeAndClean 10s steps(50, end) infinite, blinking 1s infinite',
       },
       keyframes: {
         slideIn: {
