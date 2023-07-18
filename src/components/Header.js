@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { BsFillEnvelopeFill } from 'react-icons/bs';
+import useWindowWidth from '../hooks/useWindowWidth';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [menuClosing, setMenuClosing] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const { isMobile } = useWindowWidth();
+
   const toggleMenu = (event, menuClosing) => {
     if (menuClosing) {
       setMenuClosing(true);
@@ -17,16 +19,10 @@ const Header = () => {
     } else if (isMobile) setMenuOpen(!menuOpen);
   };
 
-  useEffect(() => {
-    window.addEventListener('resize', () => {
-      setIsMobile(window.innerWidth < 768);
-    });
-  }, []);
-
   return (
     <header className="font-roboto">
       <nav
-        className={`flex ${`${menuClosing ? 'animate-slideOut' : ''}`} ${menuOpen ? 'animate-slideIn flex-col h-screen w-screen absolute' : 'justify-between px-3'} bg-customGrey text-white toolbar md:items-center md:px-[10.416%]`}
+        className={`flex ${`${menuClosing ? 'animate-slideOut' : ''}`} ${menuOpen ? 'animate-slideIn flex-col h-screen w-screen fixed z-10' : 'justify-between px-3'} bg-customGrey text-white pr-0 md:items-center md:px-[10.416%]`}
       >
         <a className={`self-center ${menuOpen ? 'hidden' : ''}`} href="/" id="author-name">Emmanuel Orji</a>
         <div className={`p-4 flex items-center ${menuOpen ? 'self-end ' : ''}`} id="mobile-menu">
@@ -41,7 +37,7 @@ const Header = () => {
           />
         </div>
         <ul
-          className={`flex ${menuOpen ? 'text-customMilk text-3xl/[44px] font-bold flex-col px-6' : `${isMobile ? 'hidden' : 'font-semibold items-center p-2'}`}`}
+          className={`flex md:pr-0 ${menuOpen ? 'text-customMilk text-3xl/[44px] font-bold flex-col px-6' : `${isMobile ? 'hidden' : 'font-semibold items-center p-2'}`}`}
           id="nav-menu"
         >
           <li className={`${menuOpen ? 'border-b border-customLighterGray' : ''} hover:bg-customOrange hover:rounded p-2`}>
@@ -53,7 +49,7 @@ const Header = () => {
           <li className={`${menuOpen ? 'border-b border-customLighterGray' : ''} hover:bg-customOrange hover:rounded p-2`}>
             <a href="#contact-me" onClick={(event) => toggleMenu(event, menuOpen)}>Contact</a>
           </li>
-          <li className={`${menuOpen ? 'hidden' : ''} hover:bg-customOrange hover:rounded p-2.5`}><BsFillEnvelopeFill /></li>
+          <li className={`${menuOpen ? 'hidden' : ''} pr-0 hover:bg-customOrange hover:rounded p-2.5`}><BsFillEnvelopeFill /></li>
         </ul>
       </nav>
     </header>
