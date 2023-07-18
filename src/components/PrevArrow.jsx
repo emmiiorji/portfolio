@@ -2,26 +2,21 @@ import React from 'react';
 import { BiLeftArrow } from 'react-icons/bi';
 import PropTypes from 'prop-types';
 
-const PrevArrow = (props) => {
-  const { disabled, onClick } = props;
-  return (
-    <div
-      className="left-arrow slick-arrow"
-      role="presentation"
-      onClick={onClick}
-      style={{ background: disabled ? '#efefef' : '#97bf0f', cursor: disabled ? 'default' : 'pointer' }}
-    >
-      <BiLeftArrow />
-    </div>
-  );
-};
+const PrevArrow = ({ onClick }) => (
+  <button
+    type="button"
+    className="flex justify-center items-center bg-customOrange h-12 w-16 rounded-l-full cursor-pointer"
+    onClick={onClick}
+  >
+    <BiLeftArrow className="text-3xl col" />
+  </button>
+);
 
 PrevArrow.defaultProps = {
   onClick: () => {},
 };
 
 PrevArrow.propTypes = {
-  disabled: PropTypes.bool.isRequired,
   onClick: PropTypes.func,
 };
 
