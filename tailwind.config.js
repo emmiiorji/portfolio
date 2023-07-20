@@ -22,6 +22,8 @@ module.exports = {
         customMilk: '#FFF5E1',
         customLighterGray: '#6F6C6B',
         customRed: '#f41314',
+        customLightBlack: '#333130',
+        whiteOverlay: 'rgba(255, 255, 255, 0.7)',
       },
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
