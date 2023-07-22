@@ -12,6 +12,14 @@ module.exports = {
       headerBgMobile: 'url(./assets/img/header_mobile.png)',
       headerBgDesktop: 'url(./assets/img/Illustration-header.png)',
     },
+    screens: {
+      sm: '640px',
+      md: '768px',
+      tab: '900px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
+    },
     extend: {
       colors: {
         customBlack: '#1c1a19',
