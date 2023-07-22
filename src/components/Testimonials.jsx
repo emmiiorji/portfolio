@@ -16,30 +16,34 @@ const Testimonials = () => {
   const numOfSlides = windowWidth < 768 ? 1 : 3;
 
   return (
-    <section className="flex flex-col items-center" id="slick">
-      <Slider
-        prevArrow={<PrevArrow firstSlide={currentSlide === 0} />}
-        nextArrow={<NextArrow lastSlide={currentSlide === testimonials.length - numOfSlides} />}
-        speed={1000}
-        dots
-        appendDots={(dots) => <Dots dots={dots} currentSlide={currentSlide} />}
-        beforeChange={(current, next) => setCurrentSlide(next)}
-        className="w-full max-w-3xl self-center bg-customLightBlack rounded-lg px-10 md:px-0 py-4 mt-5"
-        slidesToShow={numOfSlides}
-      >
-        {testimonials.map((testimonial, index) => (
-          <TestimonialCard
-            key={nanoid()}
-            author={testimonial.author}
-            headshot={testimonial.headshot}
-            title={testimonial.title}
-            description={testimonial.description}
-            isCurrentSlide={
-              index === (currentSlide + testimonials.length + 1) % testimonials.length
-            }
-          />
-        ))}
-      </Slider>
+    <section className="flex flex-col items-center mt-32" id="slick">
+      <h2 className="text-3xl font-bold text-customOffWhite mb-6 text-center">What they say:</h2>
+      <div className="w-full max-w-3xl bg-customLightBlack px-10 md:px-4 tab:px-10 md:box-content rounded-lg">
+        <Slider
+          prevArrow={<PrevArrow />}
+          nextArrow={<NextArrow />}
+          speed={1000}
+          dots
+          appendDots={(dots) => <Dots dots={dots} currentSlide={currentSlide} />}
+          beforeChange={(current, next) => setCurrentSlide(next)}
+          className="z-10 py-4"
+          slidesToShow={numOfSlides}
+          autoplay
+        >
+          {testimonials.map((testimonial, index) => (
+            <TestimonialCard
+              key={nanoid()}
+              author={testimonial.author}
+              headshot={testimonial.headshot}
+              title={testimonial.title}
+              description={testimonial.description}
+              isCurrentSlide={
+                index === (currentSlide + testimonials.length + 1) % testimonials.length
+              }
+            />
+          ))}
+        </Slider>
+      </div>
     </section>
   );
 };
