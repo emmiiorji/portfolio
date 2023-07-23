@@ -21,6 +21,9 @@ module.exports = {
       '2xl': '1536px',
     },
     extend: {
+      dropShadow: {
+        customLg: '0px 4px 5px rgba(255, 255, 255, 0.2)',
+      },
       colors: {
         customBlack: '#1c1a19',
         customOrange: '#ff6b00',
