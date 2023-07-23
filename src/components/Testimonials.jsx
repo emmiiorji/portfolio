@@ -17,8 +17,8 @@ const Testimonials = () => {
 
   return (
     <section className="flex flex-col items-center mt-32" id="slick">
-      <h2 className="text-3xl font-bold text-customOffWhite mb-6 text-center">What they say:</h2>
-      <div className="w-full max-w-3xl bg-customLightBlack px-10 md:px-4 tab:px-10 md:box-content rounded-lg">
+      <h2 className="text-3xl font-bold text-customOffWhite mb-6 text-center">Hear what they say:</h2>
+      <div className="drop-shadow-customLg w-full max-w-3xl bg-customLightBlack px-10 md:px-4 tab:px-10 md:box-content rounded-lg">
         <Slider
           prevArrow={<PrevArrow />}
           nextArrow={<NextArrow />}
@@ -29,6 +29,7 @@ const Testimonials = () => {
           className="z-10 py-4"
           slidesToShow={numOfSlides}
           autoplay
+          autoplaySpeed={6000}
         >
           {testimonials.map((testimonial, index) => (
             <TestimonialCard
