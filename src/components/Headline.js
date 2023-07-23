@@ -19,8 +19,8 @@ const Headline = () => (
             </span>
           </h1>
         </div>
-        <h2 className="text-customMilk my-3 text-2xl ">I am a Software Developer</h2>
-        <p className="text-white max-w-sm text-base my-3">
+        <h2 className="text-customMilk my-3 text-2xl font-roboto">I am a Software Developer</h2>
+        <p className="text-white max-w-sm text-base my-3 font-poppins">
           I can help you build a product, feature or website.
           Look through some of my work and experience!
           If you like what you see and have a project you need coded,
