@@ -8,3 +8,37 @@
   justify-content: center;
   gap: 10px;
 }
+
+/* Reference: https://dev.to/afif/a-multi-line-css-only-typewriter-effect-3op3 */
+#headlineParagraph {
+  font-family: monospace; /* A monospace font is required for the animation */
+  color: #0000;
+  background:
+    linear-gradient(-90deg, #ff6b00 5px, #0000 0) 10px 0,
+    linear-gradient(white 0 0) 0 0;
+  /* background-size: calc(var(--n)*1ch) 200%; */
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  /* animation:
+    cursor .7s infinite steps(1),
+    typing calc(var(--n)*.3s) steps(var(--n)) infinite forwards; */
+}
+
+@keyframes typing {
+  0%, 100% {
+    background-size: 0 200%
+  }
+  80% {
+    background-size: calc(186*1ch) 200%
+  }
+}
+
+@keyframes cursor {
+  0%, 100% {
+    background-position: 0 0, 0 0
+  }
+  50% {
+    background-position: 0 -100%, 0 0
+  }
+}
