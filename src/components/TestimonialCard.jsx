@@ -9,15 +9,15 @@ const TestimonialCard = ({
   return (
     <div className="relative">
       <div className={`${isCurrentSlide || isMobile ? '' : 'absolute top-0 left-0 h-full w-full bg-whiteOverlay rounded-lg'}`} />
-      <div className={`${isCurrentSlide ? '' : ''} flex flex-col p-2 text-center justify-between items-center mt-5 bg-white rounded-lg`}>
+      <div className={`${isCurrentSlide ? '' : ''} flex flex-col px-2 py-4 text-center justify-between items-center mt-5 bg-white rounded-lg`}>
         <div className="flex flex-col justify-between items-center">
-          <div className="self-center justify-center rounded-full truncate h-10 w-10">
+          <div className="self-center justify-center rounded-full border-2 box-content border-customRed truncate h-10 w-10">
             <img className="" src={headshot} alt={`${author}'s headshot`} />
           </div>
-          <h2>{author}</h2>
-          <h3>{title}</h3>
+          <h2 className="font-bold text-">{author}</h2>
+          <small>{title}</small>
         </div>
-        <p className="">{description}</p>
+        <p className="text-base mt-2">{description}</p>
       </div>
     </div>
   );
