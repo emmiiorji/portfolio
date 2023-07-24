@@ -7,7 +7,6 @@ module.exports = {
     backgroundSize: {
       '25%': '25%',
       '35%': '35%',
-      typingTextSize: 'background-size:calc(var(--n)*1ch) 200%',
     },
     backgroundImage: {
       headerBgMobile: 'url(./assets/img/header_mobile.png)',
