@@ -7,6 +7,7 @@ module.exports = {
     backgroundSize: {
       '25%': '25%',
       '35%': '35%',
+      typingTextSize: 'background-size:calc(var(--n)*1ch) 200%',
     },
     backgroundImage: {
       headerBgMobile: 'url(./assets/img/header_mobile.png)',
@@ -44,8 +45,12 @@ module.exports = {
       animation: {
         slideIn: 'slideIn 1s ease-in-out',
         slideOut: 'slideOut 1s ease-in-out',
-        typing: 'typing 10s steps(100, end) forwards, blinking 1s infinite',
-        typeAndClean: 'typeAndClean 10s steps(50, end) infinite, blinking 1s infinite',
+        blinking: 'blinking 1s infinite',
+        typing: 'typing 10s 10s steps(100, end) forwards, blinking 1s infinite',
+        typeHeadlineName: 'typeHeadlineName 75s steps(50, end) infinite, blinking 1s infinite',
+        typeHeadlineTitle: 'typeHeadlineTitle 75s steps(50, end) infinite, blinking 1s infinite',
+        showLines: 'showLines 10s 10s steps(4, end) forwards',
+        slideXOut: 'slideXOut 10s ease forwards, blinking 1s infinite',
       },
       keyframes: {
         slideIn: {
@@ -72,15 +77,34 @@ module.exports = {
             width: '100%',
           },
         },
-        typeAndClean: {
-          '0%': {
+        typeHeadlineName: {
+          '0%, 2.6667%, 16%': {
+            width: '0',
+            display: 'block',
+          },
+          '2.6667%': {
             width: '0',
           },
-          '80%': {
+          '13.3333%': {
             width: '100%',
           },
-          '100%': {
-            width: '0%',
+          '17.3333%, 100%': {
+            display: 'none',
+          },
+        },
+        typeHeadlineTitle: {
+          '0%, 17.333%': {
+            display: 'none',
+          },
+          '18.667%, 20%, 32%': {
+            width: '0',
+            display: 'block',
+          },
+          '29.333%': {
+            width: '100%',
+          },
+          '33.333%, 100%': {
+            display: 'none',
           },
         },
         blinking: {
@@ -92,6 +116,22 @@ module.exports = {
           },
           '100%': {
             'border-color': 'transparent',
+          },
+        },
+        showLines: {
+          '0%': {
+            'max-height': '0',
+          },
+          '100%': {
+            'max-height': '100%',
+          },
+        },
+        slideXOut: {
+          '0%': {
+            transform: 'translateX(0%)',
+          },
+          '100%': {
+            transform: 'translateX(100%)',
           },
         },
       },
