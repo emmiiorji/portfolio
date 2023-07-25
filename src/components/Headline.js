@@ -25,8 +25,8 @@ const Headline = () => {
               I&#39;m Emmanuel
             </span>
           </h1>
-          <h2 className="animate-typeHeadlineTitle border-r-4 whitespace-nowrap border-customMilk w-0 overflow-hidden text-customMilk my-3 text-2xl font-roboto">
-            I am a Software Developer
+          <h2 className="max-w-xs w-fit">
+            <span className="animate-typeHeadlineTitle border-r-4 whitespace-nowrap border-customMilk w-0 overflow-hidden text-customMilk my-3 text-2xl font-roboto">I am a Software Developer</span>
           </h2>
           <p className="text-white max-w-sm text-xl my-3 font-poppins">
             <span
