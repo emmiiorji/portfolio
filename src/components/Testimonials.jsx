@@ -16,7 +16,7 @@ const Testimonials = () => {
   const numOfSlides = windowWidth < 768 ? 1 : 3;
 
   return (
-    <section className="flex flex-col items-center mt-32" id="slick">
+    <section className="flex flex-col items-center mt-32 px-[calc(10.416%-24px)] md:p-0" id="slick">
       <h2 className="text-3xl font-bold text-customOffWhite mb-6 text-center">Hear what they say:</h2>
       <div className="drop-shadow-customLg w-full max-w-3xl bg-customLightBlack px-10 md:px-4 tab:px-10 md:box-content rounded-lg">
         <Slider
