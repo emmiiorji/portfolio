@@ -12,7 +12,7 @@
 /* Reference: https://dev.to/afif/a-multi-line-css-only-typewriter-effect-3op3 */
 #headlineParagraph {
   font-family: 'Roboto Mono', monospace; /* A monospace font is required for the animation */
-  font-weight: 400;
+  /* font-weight: 400; */
   color: #0000;
   background:
     linear-gradient(-90deg, #ff6b00 5px, #0000 0) 10px 0,
@@ -26,20 +26,3 @@
     typing calc(var(--n)*.3s) steps(var(--n)) infinite forwards; */
 }
 
-@keyframes typing {
-  0%, 100% {
-    background-size: 0 200%
-  }
-  85% {
-    background-size: calc(186*1ch) 200%
-  }
-}
-
-@keyframes cursor {
-  0%, 100% {
-    background-position: 0 0, 0 0
-  }
-  50% {
-    background-position: 0 -100%, 0 0
-  }
-}
