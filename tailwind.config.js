@@ -13,6 +13,7 @@ module.exports = {
       headerBgDesktop: 'url(./assets/img/Illustration-header.png)',
     },
     screens: {
+      ssm: '500px',
       sm: '640px',
       md: '768px',
       tab: '900px',
@@ -45,9 +46,6 @@ module.exports = {
         slideIn: 'slideIn 1s ease-in-out',
         slideOut: 'slideOut 1s ease-in-out',
         blinking: 'blinking 1s infinite',
-        typing: 'typing 10s 10s steps(100, end) forwards, blinking 1s infinite',
-        typeHeadlineName: 'typeHeadlineName 75s steps(50, end) infinite, blinking 1s infinite',
-        typeHeadlineTitle: 'typeHeadlineTitle 75s steps(50, end) infinite, blinking 1s infinite',
         showLines: 'showLines 10s 10s steps(4, end) forwards',
         slideXOut: 'slideXOut 10s ease forwards, blinking 1s infinite',
       },
@@ -66,44 +64,6 @@ module.exports = {
           },
           '100%': {
             transform: 'translateY(calc(-100vh + 50px))',
-          },
-        },
-        typing: {
-          from: {
-            width: '0',
-          },
-          to: {
-            width: '100%',
-          },
-        },
-        typeHeadlineName: {
-          '0%, 2.6667%, 16%': {
-            width: '0',
-            display: 'block',
-          },
-          '2.6667%': {
-            width: '0',
-          },
-          '13.3333%': {
-            width: '100%',
-          },
-          '17.3333%, 100%': {
-            display: 'none',
-          },
-        },
-        typeHeadlineTitle: {
-          '0%, 17.333%': {
-            display: 'none',
-          },
-          '18.667%, 20%, 32%': {
-            width: '0',
-            display: 'block',
-          },
-          '29.333%': {
-            width: '100%',
-          },
-          '33.333%, 100%': {
-            display: 'none',
           },
         },
         blinking: {
