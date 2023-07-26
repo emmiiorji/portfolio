@@ -19,8 +19,13 @@ const scrollToBottom = () => {
   });
 };
 
+// Helper function to convert the style object into a CSS string
+const getStyleProperties = (styleObject) => Object.entries(styleObject)
+  .map(([prop, value]) => `${prop}: ${value}`).join('; ');
+
 export {
   scrollToSection,
   scrollToTop,
   scrollToBottom,
+  getStyleProperties,
 };
