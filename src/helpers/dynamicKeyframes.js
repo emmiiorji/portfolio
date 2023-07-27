@@ -3,13 +3,11 @@ import { getKeyframeString } from '.';
 const typing = (n, totalTime) => {
   const keyframeObj = {
     '0%': {
-      // display: 'none',
       visibility: 'hidden',
       'background-size': '0 200%',
     },
     [`${(25 / totalTime) * 100}%, 100%`]: {
       'background-size': '0 200%',
-      // display: 'inline',
       visibility: 'visible',
     },
     [`${((totalTime - 10) / totalTime) * 100}%`]: {
@@ -35,14 +33,12 @@ const typeHeadlineName = (totalTime) => {
   const keyframeObj = {
     [`0%, ${(2 / totalTime) * 100}%, ${(12 / totalTime) * 100}%`]: {
       width: 0,
-      // display: 'block',
       visibility: 'visible',
     },
     [`${(10 / totalTime) * 100}%`]: {
       width: '100%',
     },
     [`${(13 / totalTime) * 100}%, 100%`]: {
-      // display: 'none',
       visibility: 'hidden',
     },
   };
@@ -52,12 +48,10 @@ const typeHeadlineName = (totalTime) => {
 const typeHeadlineTitle = (totalTime) => {
   const keyframeObj = {
     [`0%, ${(13 / totalTime) * 100}%, ${(25 / totalTime) * 100}%, 100%`]: {
-      // display: 'none',
       visibility: 'hidden',
     },
     [`${(14 / totalTime) * 100}%, ${(24 / totalTime) * 100}%`]: {
       width: 0,
-      // display: 'block',
       visibility: 'visible',
     },
     [`${(22 / totalTime) * 100}%`]: {
