@@ -49,7 +49,7 @@ const Header = () => {
           <li className={`${menuOpen ? 'border-b border-customLighterGray' : ''} hover:bg-customOrange hover:rounded p-2`}>
             <a href="#contact-me" onClick={(event) => toggleMenu(event, menuOpen)}>Contact</a>
           </li>
-          <li className={`${menuOpen ? 'hidden' : ''} pr-0 hover:bg-customOrange hover:rounded p-2.5`}><BsFillEnvelopeFill /></li>
+          <li className={`${menuOpen ? 'hidden' : ''} hover:bg-customOrange hover:rounded p-2.5`}><BsFillEnvelopeFill /></li>
         </ul>
       </nav>
     </header>
