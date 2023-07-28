@@ -36,7 +36,7 @@ const Headline = () => {
           <img src={headShot} alt="headshot" className="w-full max-w-xs rounded-2xl border-4 border-customRed" />
         </div>
         <div className="flex flex-col max-w-full">
-          <div className="h-80 relative">
+          <div className="relative">
             <h1 className="absolute mb-16 left-0 font-creteRound w-fit text-customOrange text-[40px]/[4rem] md:text-[72px]/[82px]">
               <span>Hi,</span>
               <span
@@ -53,12 +53,12 @@ const Headline = () => {
                 style={{
                   animation: `typeHeadlineTitle ${totalTime}s steps(50, end) infinite, blinking 1s infinite`,
                 }}
-                className="border-r-4 whitespace-nowrap border-customMilk w-0 overflow-hidden text-customMilk my-3 text-2xl font-roboto"
+                className="border-r-4 whitespace-nowrap border-customMilk w-0 overflow-hidden text-customMilk text-2xl font-roboto"
               >
                 I am a Software Developer
               </h2>
             </div>
-            <p className="absolute top-16 left-0 text-white md:max-w-sm text-xl my-3 font-poppins">
+            <p className="mt-16 text-white md:max-w-sm text-xl my-3 font-poppins">
               <span
                 className="font-bold border-customOrange"
                 id="headlineParagraph"
