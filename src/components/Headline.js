@@ -35,7 +35,7 @@ const Headline = () => {
         <div className="flex justify-center max-w-full">
           <img src={headShot} alt="headshot" className="w-full max-w-xs rounded-2xl border-4 border-customRed" />
         </div>
-        <div className="flex flex-col md:flex-row-reverse max-w-full">
+        <div className="flex flex-col relative max-w-full">
           <div className="relative">
             <h1 className="absolute mb-16 left-0 font-creteRound w-fit text-customOrange text-[40px]/[4rem] md:text-[72px]/[82px]">
               <span>Hi,</span>
@@ -71,7 +71,7 @@ const Headline = () => {
               </span>
             </p>
           </div>
-          <Socials className="text-customLightGray flex md:flex-col py-2 gap-4 text-xl" />
+          <Socials className="text-customLightGray flex md:-ml-[6vw] md:mt-32 md:flex-col md:absolute md:top-0 md:left:0 py-2 gap-4 text-xl" />
         </div>
       </div>
       <Testimonials />
