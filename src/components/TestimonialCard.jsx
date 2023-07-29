@@ -7,17 +7,19 @@ const TestimonialCard = ({
 }) => {
   const { isMobile } = useWindowWidth();
   return (
-    <div className="relative">
-      <div className={`${isCurrentSlide || isMobile ? '' : 'absolute top-0 left-0 h-full w-full bg-whiteOverlay rounded-lg'}`} />
-      <div className={`${isCurrentSlide ? '' : ''} flex flex-col px-2 py-4 text-center justify-between items-center mt-5 bg-white rounded-lg`}>
+    <div className="relative h-full bg-white rounded-xl my-4">
+      <div className={`${isCurrentSlide || isMobile ? '' : 'absolute top-0 left-0 h-full w-full rounded-xl bg-whiteOverlay'}`} />
+      <div className={`${isCurrentSlide ? '' : ''} flex flex-col p-4 text-center items-center my-5 rounded-lg`}>
         <div className="flex flex-col justify-between items-center">
           <div className="self-center justify-center rounded-full border-2 box-content border-customRed truncate h-10 w-10">
             <img className="" src={headshot} alt={`${author}'s headshot`} />
           </div>
-          <h2 className="font-bold text-">{author}</h2>
-          <small>{title}</small>
+          <h2 className="text-base">{author}</h2>
+          <small className="text-xs">{title}</small>
         </div>
-        <p className="text-base mt-2">{description}</p>
+        <p className="text-base/5 mt-2 whitespace-pre-wrap">
+          {description.length > 160 ? `${description.slice(0, 160)}....` : description}
+        </p>
       </div>
     </div>
   );
