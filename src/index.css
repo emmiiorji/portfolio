@@ -4,9 +4,16 @@
 
 #slick .slick-track {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+#slick .slick-slide {
+  height: inherit;
+}
+
+#slick .slick-slide > div {
+  height: 100%;
 }
 
 /* Reference: https://dev.to/afif/a-multi-line-css-only-typewriter-effect-3op3 */
