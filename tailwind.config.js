@@ -13,6 +13,7 @@ module.exports = {
       headerBgDesktop: 'url(./assets/img/Illustration-header.png)',
     },
     screens: {
+      xssm: '420px',
       ssm: '500px',
       sm: '640px',
       md: '768px',
@@ -41,6 +42,7 @@ module.exports = {
         roboto: ['Roboto', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
         creteRound: ['"Crete Round"', 'serif'],
+        coustard: ['Coustard', 'serif'],
       },
       animation: {
         slideIn: 'slideIn 1s ease-in-out',
