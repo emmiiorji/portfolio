@@ -8,7 +8,7 @@ const Dots = ({ dots, currentSlide }) => (
       dots.map((dot, index) => (
         <li
           key={nanoid()}
-          className={`mx-2 w-4 h-4 rounded-full ${
+          className={`mx-1 w-3 h-3 rounded-full ${
             index === currentSlide ? 'bg-blue-500' : 'bg-gray-300'
           }`}
         >
