@@ -460,34 +460,6 @@ input:focus {
   width: 100%;
 }
 
-/* .footer-container {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: var(--white);
-  padding-bottom: 8px;
-}
-
-.footer-container ul {
-  display: flex;
-  align-items: center;
-  margin: 0 24px;
-  flex-direction: row;
-}
-
-.footer-container .socials .icon {
-  margin: 25px 11.5px 23px 11.5px;
-  color: #505f79;
-} */
-
-/* #footer-bottom {
-  width: 50%;
-  border: 2.5px solid #0d151e;
-  border-radius: 10px;
-  background: #0d151e;
-} */
 
 #contact .success {
   border: 1.5px solid #94c7b0;
