@@ -19,7 +19,7 @@ const Project = ({ project, projectId, handlePeek }) => (
         </p>
         <Languages languages={project.languages} />
       </div>
-      <button type="button" className="hidden" id={`project_${projectId}`} onClick={() => handlePeek(projectId)}>
+      <button type="button" className="hidden button" id={`project_${projectId}`} onClick={() => handlePeek(projectId)}>
         Have a Peek
       </button>
     </div>
