@@ -37,7 +37,7 @@ const Headline = () => {
         </div>
         <div className="flex flex-col relative max-w-full">
           <div className="relative">
-            <h1 className="absolute mb-16 left-0 font-creteRound w-fit text-customOrange text-[40px]/[4rem] md:text-[72px]/[82px]">
+            <h1 className="absolute mb-16 left-0 font-creteRound w-fit text-customOrange text-[40px]/[4rem] ssm:text-[50px]/[4rem] md:text-[52px]/[4.5rem] lg:text-[72px]/[82px]">
               <span>Hi,</span>
               <span
                 style={{
@@ -48,17 +48,17 @@ const Headline = () => {
                 I&#39;m Emmanuel
               </span>
             </h1>
-            <div className="absolute top-16 left-0 max-w-xs w-fit">
+            <div className="absolute top-16 md:top-[80px] lg:top-[82px] left-0 w-fit">
               <h2
                 style={{
                   animation: `typeHeadlineTitle ${totalTime}s steps(50, end) infinite, blinking 1s infinite`,
                 }}
-                className="border-r-4 whitespace-nowrap border-customMilk w-0 overflow-hidden text-customMilk text-2xl font-roboto"
+                className="border-r-4 whitespace-nowrap border-customMilk w-0 overflow-hidden text-customMilk text-2xl md:text-3xl font-roboto"
               >
                 I am a Software Developer
               </h2>
             </div>
-            <p className="mt-16 text-white md:max-w-sm text-xl my-3 font-poppins">
+            <p className="mt-16 md:mt-[80px] lg:mt-[82px] text-white md:max-w-sm lg:max-w-[500px] text-[16px]/6 sm:text-lg/6 md:text-xl my-3 font-poppins">
               <span
                 className="font-bold border-customOrange"
                 id="headlineParagraph"
