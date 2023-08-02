@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
+import { FaGithub } from 'react-icons/fa';
+import { ImSwitch } from 'react-icons/im';
 import PropTypes from 'prop-types';
 import Languages from './Languages';
 import projects from '../helpers/projectsData';
@@ -32,7 +34,7 @@ const Modal = ({ projectId, show, closeModal }) => {
             <h2>{name}</h2>
             <AiOutlineClose className="close" onClick={() => closeModal()} />
           </div>
-          <Languages languages={languages} />
+          <Languages languages={languages} className="font-poppins" />
           <div className="project-modal-body">
             <img src={imageURL} className="project-img" alt="Project" />
             <div className="project-describe">
@@ -41,15 +43,15 @@ const Modal = ({ projectId, show, closeModal }) => {
               </p>
               <div className="points-of-action">
                 <a href={hostedURL || '#'} rel="noreferrer" target="_blank">
-                  <button type="button">
+                  <button type="button" className="button">
                     See Live
-                    <i className="fa-solid fa-power-off" />
+                    <ImSwitch className="rotate-12 text-red ml-1" />
                   </button>
                 </a>
                 <a href={githubURL || '#'} rel="noreferrer" target="_blank">
-                  <button type="button">
+                  <button type="button" className="button">
                     See Source
-                    <i className="fa-brands fa-github" />
+                    <FaGithub className="ml-1" />
                   </button>
                 </a>
               </div>
