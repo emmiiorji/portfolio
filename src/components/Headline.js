@@ -8,9 +8,8 @@ import {
 } from '../helpers/dynamicKeyframes';
 
 const Headline = () => {
-  const headlineText = `I am a passionate full-stack developer with a flair for crafting innovative and
-    seamless digital experiences. With a deep love for both front-end aesthetics and back-end 
-    functionality, I embark on a continuous journey to bring ideas to life through code`;
+  const headlineText = `I implement both front-end aesthetics and back-end functionality, bringing ideas
+    to life through codes and giving a unique blend of creativity and technical precision to my projects.`;
   const paragraphTime = headlineText.length * 0.2;
   const totalTime = paragraphTime + 25;
 
