@@ -39,6 +39,7 @@ const Headline = () => {
         </div>
         <div className="flex flex-col relative max-w-full">
           <div className="relative">
+            <div className="absolute top-0 left-0 h-full w-full bg-transparent z-50" />
             <h1 className="absolute mb-16 left-0 font-creteRound w-fit text-customOrange text-[40px]/[4rem] ssm:text-[50px]/[4rem] md:text-[52px]/[4.5rem] lg:text-[72px]/[82px]">
               <span>Hi,</span>
               <span
