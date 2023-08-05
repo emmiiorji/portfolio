@@ -10,7 +10,7 @@ const TestimonialCard = ({
   return (
     <div className="relative h-full bg-white rounded-xl">
       <div className={`${isCurrentSlide || isMobile ? '' : 'absolute top-0 left-0 h-full w-full rounded-xl bg-whiteOverlay'}`} />
-      <div className="flex flex-col h-full items-center justify-center p-4">
+      <div className="flex flex-col h-full items-center justify-center px-4">
         <QuoteLine className="rotate-180" />
         <div
           className="flex flex-col items-center ssm:items-start ssm:flex-row gap-4 p-2 text-left rounded-lg"
