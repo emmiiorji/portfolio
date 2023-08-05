@@ -18,7 +18,7 @@ const Testimonials = () => {
   return (
     <section className="flex flex-col items-center mt-16 px-[calc(10.416%-24px)] md:p-0" id="slick">
       <h2 className="text-3xl font-bold text-customOffWhite mb-6 text-center">Hear what they say:</h2>
-      <div className="drop-shadow-customLg w-full max-w-2xl bg-customLightBlack px-10 md:px-4 tab:px-10 md:box-content rounded-lg">
+      <div className="drop-shadow-customLg w-full max-w-2xl bg-customLightBlack px-10 pt-5 md:px-4 tab:px-10 md:box-content rounded-lg">
         <Slider
           prevArrow={<PrevArrow />}
           nextArrow={<NextArrow />}
