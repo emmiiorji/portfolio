@@ -29,7 +29,7 @@ const NotFound = () => {
   }, []);
 
   return (
-    <main className="notfound">
+    <main className="notfound" id="notfound">
       <div className="box">
         <div className="box__ghost">
           <div className="symbol" />

@@ -9,7 +9,7 @@ const LeadingProject = ({ project, projectId, handlePeek }) => (
       <h2>{project.name}</h2>
       <p>{project.description}</p>
       <Languages languages={project.languages} />
-      <button type="button" className="see-leading-project" id={`project_${projectId}`} onClick={() => handlePeek(projectId)}>
+      <button type="button" className="see-leading-project button" id={`project_${projectId}`} onClick={() => handlePeek(projectId)}>
         Have a Peek
       </button>
     </div>

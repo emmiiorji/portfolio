@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#slick .slick-track {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#slick .slick-slide {
+  height: inherit;
+}
+
+#slick .slick-slide > div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Reference: https://dev.to/afif/a-multi-line-css-only-typewriter-effect-3op3 */
+#headlineParagraph {
+  font-family: 'Roboto Mono', monospace; /* A monospace font is required for the animation */
+  /* font-weight: 400; */
+  color: #0000;
+  background:
+    linear-gradient(-90deg, #ff6b00 5px, #0000 0) 10px 0,
+    linear-gradient(white 0 0) 0 0;
+  /* background-size: calc(var(--n)*1ch) 200%; */
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  /* animation:
+    cursor .7s infinite steps(1),
+    typing calc(var(--n)*.3s) steps(var(--n)) infinite forwards; */
+}
+
