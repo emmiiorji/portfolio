@@ -8,7 +8,9 @@ import {
 } from '../helpers/dynamicKeyframes';
 
 const Headline = () => {
-  const headlineText = 'I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.';
+  const headlineText = `I am a passionate full-stack developer with a flair for crafting innovative and
+    seamless digital experiences. With a deep love for both front-end aesthetics and back-end 
+    functionality, I embark on a continuous journey to bring ideas to life through code`;
   const paragraphTime = headlineText.length * 0.2;
   const totalTime = paragraphTime + 25;
 
