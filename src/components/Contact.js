@@ -82,7 +82,7 @@ const Contact = () => {
           />
           <small className="show-error">{errors.message?.message}</small>
         </div>
-        <button type="submit">Reach Out</button>
+        <button type="submit" className="button">Reach Out</button>
 
       </form>
     </section>
