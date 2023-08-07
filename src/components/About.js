@@ -1,7 +1,7 @@
 import React from 'react';
 
 const About = () => (
-  <section id="about-me">
+  <section id="about-me" className="text-white">
     <h1>Who is Emmanuel?</h1>
     <p>
       I am a dynamic Software Developer! I can assist you with developing a product, feature, or
