@@ -61,7 +61,7 @@ const data = () => [
   {
     name: 'Private Investigators',
     description: "Full-stack app designed to make the process of finding and booking an investigator as easy and seamless as possible. It's a perfect tool for anyone in need of investigative services.",
-    imageURL: 'https://res.cloudinary.com/emmii/image/upload/v1691602724/my_portfolio/Screenshot_2023-08-09_183249_yvzvqz.png',
+    imageURL: 'https://res.cloudinary.com/emmii/image/upload/v1691603101/my_portfolio/Screenshot_2023-08-09_184432_tecujf.png',
     // imgMobile: 'https://res.cloudinary.com/emmii/image/upload/v1666193436/my_portfolio/Math-Magician-Mobile_lyfdhe.jpg',
     languages: ['React', 'Ruby on Rails', 'PostgreSQL'],
     hostedURL: 'https://private-investigators.onrender.com/',
