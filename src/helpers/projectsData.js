@@ -59,6 +59,15 @@ const data = () => [
     githubURL: 'https://github.com/emmiiorji/math-magicians-app',
   },
   {
+    name: 'Private Investigators',
+    description: "Full-stack app designed to make the process of finding and booking an investigator as easy and seamless as possible. It's a perfect tool for anyone in need of investigative services.",
+    imageURL: 'https://res.cloudinary.com/emmii/image/upload/v1691602724/my_portfolio/Screenshot_2023-08-09_183249_yvzvqz.png',
+    // imgMobile: 'https://res.cloudinary.com/emmii/image/upload/v1666193436/my_portfolio/Math-Magician-Mobile_lyfdhe.jpg',
+    languages: ['React', 'Ruby on Rails', 'PostgreSQL'],
+    hostedURL: 'https://private-investigators.onrender.com/',
+    githubURL: 'https://github.com/emmiiorji/private-investigators',
+  },
+  {
     name: 'Forex Academy',
     description: 'This is an online learning platform for users interested in learning FOREX trading, This website is built with comprehensive courses from the basics of forex market to advanced trading strategies.',
     imageURL: 'https://res.cloudinary.com/emmii/image/upload/v1686919370/my_portfolio/Screenshot_2023-06-16_133935_x679md.png',
