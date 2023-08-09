@@ -25,7 +25,7 @@ const TestimonialCard = ({
             </p>
           </div>
         </div>
-        <QuoteLine className="" />
+        <QuoteLine />
       </div>
     </div>
   );
