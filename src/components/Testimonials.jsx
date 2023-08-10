@@ -31,7 +31,7 @@ const Testimonials = () => {
           slidesToShow={numOfSlides}
           centerPadding="20%"
           autoplay
-          autoplaySpeed={6000}
+          autoplaySpeed={4000}
         >
           {testimonials.map((testimonial, index) => (
             <TestimonialCard
