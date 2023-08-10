@@ -73,7 +73,7 @@ const Headline = () => {
               </span>
             </p>
           </div>
-          <Socials className="text-customLightGray flex md:-ml-[6vw] md:mt-32 md:flex-col md:absolute md:top-0 md:left:0 py-2 gap-4 text-xl" />
+          <Socials className="hidden md:flex text-customLightGray md:-ml-[6vw] md:mt-32 md:flex-col md:absolute md:top-0 md:left:0 py-2 gap-4 text-xl" />
         </div>
       </div>
       <Testimonials />
