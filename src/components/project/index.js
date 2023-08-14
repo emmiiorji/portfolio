@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Languages from './Languages';
+import Languages from '../languages';
 
 const Project = ({ project, projectId, handlePeek }) => (
   <div className="card card-with-bgimage active" style={{ position: 'relative' }}>

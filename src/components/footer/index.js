@@ -1,5 +1,5 @@
 import React from 'react';
-import Socials from './Socials';
+import Socials from '../socials';
 
 const Footer = () => (
   <footer className="flex w-full items-center justify-center flex-col bg-white pb-2" style={{ color: '#505f79' }}>

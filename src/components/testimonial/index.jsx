@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import useWindowWidth from '../hooks/useWindowWidth';
-import QuoteLine from './QuoteLine';
+import useWindowWidth from '../../hooks/useWindowWidth';
+import QuoteLine from './quoteLine';
 
 const TestimonialCard = ({
   author, headshot, title, description, isCurrentSlide,

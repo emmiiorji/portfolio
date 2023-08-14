@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import Socials from './Socials';
-import headShot from '../assets/img/IMG_3525.jpg';
-import Testimonials from './Testimonials';
+import Socials from '../socials';
+import headShot from '../../assets/img/IMG_3525.jpg';
+import Testimonials from '../testimonials';
 import {
   blinking,
   cursor, typeHeadlineName, typeHeadlineTitle, typing,
-} from '../helpers/dynamicKeyframes';
+} from '../../helpers/dynamicKeyframes';
 
 const Headline = () => {
   const headlineText = `I implement both front-end aesthetics and back-end functionality, bringing ideas

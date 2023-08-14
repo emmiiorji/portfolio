@@ -3,12 +3,12 @@ import { nanoid } from 'nanoid';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import PrevArrow from './PrevArrow';
-import NextArrow from './NextArrow';
-import testimonials from '../helpers/Testimonials';
-import TestimonialCard from './TestimonialCard';
-import useWindowWidth from '../hooks/useWindowWidth';
-import Dots from './Dots';
+import PrevArrow from '../prevArrrow';
+import NextArrow from '../nextArrow';
+import testimonials from '../../helpers/Testimonials';
+import TestimonialCard from '../testimonial';
+import useWindowWidth from '../../hooks/useWindowWidth';
+import Dots from '../testimonial/dots';
 
 const Testimonials = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

@@ -3,8 +3,8 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { FaGithub } from 'react-icons/fa';
 import { ImSwitch } from 'react-icons/im';
 import PropTypes from 'prop-types';
-import Languages from './Languages';
-import projects from '../helpers/projectsData';
+import Languages from '../languages';
+import projects from '../../helpers/projectsData';
 
 const Modal = ({ projectId, show, closeModal }) => {
   const {
