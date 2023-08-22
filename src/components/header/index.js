@@ -27,7 +27,6 @@ const Header = () => {
         <a className={`self-center ${menuOpen ? 'hidden' : ''}`} href="/" id="author-name">Emmanuel Orji</a>
         <div className={`p-4 flex items-center ${menuOpen ? 'self-end ' : ''}`} id="mobile-menu">
           <GiHamburgerMenu
-            id="hamburger"
             className={`${!menuOpen && isMobile ? '' : 'hidden'}`}
             onClick={toggleMenu}
           />

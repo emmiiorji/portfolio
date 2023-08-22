@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import PrevArrow from '../prevArrrow';
 import NextArrow from '../nextArrow';
-import testimonials from '../../helpers/Testimonials';
+import { testimonials } from '../../helpers';
 import TestimonialCard from '../testimonial';
 import useWindowWidth from '../../hooks/useWindowWidth';
 import Dots from '../testimonial/dots';

@@ -1,4 +1,4 @@
-import { getKeyframeString } from '.';
+import { getKeyframeString } from '../keyframeString';
 
 const typeHeadlineName = (totalTime) => {
   const keyframeObj = {

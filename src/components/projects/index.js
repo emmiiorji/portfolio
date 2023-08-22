@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { nanoid } from 'nanoid';
 import Project from '../project';
-import projects from '../../helpers/projectsData';
+import { projects } from '../../helpers';
 import Modal from '../modal';
 import LeadingProject from '../LeadingProject';
 

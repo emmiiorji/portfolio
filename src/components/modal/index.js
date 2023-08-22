@@ -4,7 +4,7 @@ import { FaGithub } from 'react-icons/fa';
 import { ImSwitch } from 'react-icons/im';
 import PropTypes from 'prop-types';
 import Languages from '../languages';
-import projects from '../../helpers/projectsData';
+import { projects } from '../../helpers';
 
 const Modal = ({ projectId, show, closeModal }) => {
   const {
