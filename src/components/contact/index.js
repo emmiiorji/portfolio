@@ -24,8 +24,7 @@ const Contact = () => {
   return (
     <section id="contact">
       <p>
-        I&#39;m always interested in hearing about new projects,
-        so if you&#39;d like to chat please get in touch.
+        I&#39;m always interested in hearing about new projects. Please get in touch.
       </p>
 
       <form id="contact-me" onSubmit={handleSubmit(handleFormSubmit)}>

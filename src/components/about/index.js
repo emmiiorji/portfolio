@@ -5,7 +5,7 @@ const About = () => (
     <h1>Who is Emmanuel?</h1>
     <p>
       I am a dynamic Software Developer! I can assist you with developing a product, feature, or
-      website. View a selection of my projects and experiences! If my work resonates with you and
+      website. View a selection of my projects and experiences! If
       you have a coding project in need of a skilled hand, I eagerly await your contact.
       Together, let&#39;s bring your ideas to life!
     </p>
